@@ -17,6 +17,7 @@ public class TestController {
     public void statusCall(HttpServletRequest req, HttpServletResponse res){
         System.out.println(req.getRemoteAddr());
         System.out.println(req.getRequestURI());
+        System.out.println(req.getRemoteHost());
 //        return bdrSoftCaller.statusCall(callId, hubId);
     }
 }
