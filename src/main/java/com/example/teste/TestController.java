@@ -18,6 +18,7 @@ public class TestController {
         System.out.println(req.getRemoteAddr());
         System.out.println(req.getRequestURI());
         System.out.println(req.getRemoteHost());
+        System.out.println(req.getHeader("referer"));
 //        return bdrSoftCaller.statusCall(callId, hubId);
     }
 }
