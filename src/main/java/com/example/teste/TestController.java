@@ -14,13 +14,7 @@ public class TestController {
     }
 
     @GetMapping
-    public void statusCall(HttpServletRequest req, HttpServletResponse res){
-        System.out.println(req.getRemoteAddr());
-        System.out.println(req.getRequestURI());
-        System.out.println(req.getRemoteHost());
-        System.out.println(req.getHeader("referer"));
-        res.setHeader("Location", req.getHeader("referer"));
-        res.setStatus(302);
-//        return bdrSoftCaller.statusCall(callId, hubId);
+    public void statusCall(HttpServletRequest req, HttpServletResponse res, @RequestBody String str){
+        System.out.println(str);
     }
 }
